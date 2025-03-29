@@ -10,7 +10,7 @@ conda activate elt
 filetimestamp=$(date +'%Y%m%d_%H%M%S')
 
 # Redirect both stdout and stderr to a log file with the timestamp suffix
-exec >> /home/kangh/dsai-module-2-project/logs/run_import_${filetimestamp}.log 2>&1
+exec >> /home/kangh/dsai-module-2-project/logs/run_csv_import_${filetimestamp}.log 2>&1
 
 # Change to your project directory
 cd /home/kangh/dsai-module-2-project/notebooks

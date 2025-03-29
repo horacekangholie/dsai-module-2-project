@@ -1,5 +1,6 @@
 -- models/star/dim_customer.sql
 
+-- This is incremental approach (Type 1 SCD)
 -- {{ config( materialized='incremental', unique_key='customer_id' ) }}
 
 -- WITH source AS (
@@ -19,8 +20,8 @@
 --   WHERE customer_id NOT IN (SELECT customer_id FROM {{ this }})
 -- {% endif %}
 
--- models/star/dim_customer.sql
 
+-- This is snapshot approach, refer to customer_snapshot.sql (Type 2 SCD)
 {{ config(materialized='table') }}
 
 SELECT

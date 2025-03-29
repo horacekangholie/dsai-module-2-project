@@ -29,6 +29,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
+
+# What defined here will get overridden if individual model (.sql) defined its own materialized
 models:
   olist_dataset:
     star:

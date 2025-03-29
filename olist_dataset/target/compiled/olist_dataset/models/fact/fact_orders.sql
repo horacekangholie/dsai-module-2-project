@@ -13,6 +13,7 @@ WITH orders AS (
         order_delivered_customer_date,
         order_estimated_delivery_date
     FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_orders_dataset`
+    WHERE order_status IN ('delivered', 'canceled')   -- Only include delivered or canceled
 ),
 
 payments AS (
@@ -36,5 +37,10 @@ SELECT
 FROM orders o
 LEFT JOIN payments p USING (order_id)
 
+-- Comment out this part as incremental_strategy='merge' add to config
+-- The logic of this part is it filter out those order id that already in fact_orders table
+-- which assume data already in table never change
 
-  WHERE order_id NOT IN (SELECT order_id FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`)
+-- 
+--   WHERE order_id NOT IN (SELECT order_id FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`)
+-- 

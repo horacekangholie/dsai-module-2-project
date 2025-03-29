@@ -1,0 +1,48 @@
+2025-03-29 08:10:07 [WARNING] No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+2025-03-29 08:10:07 [INFO] Connected to BigQuery successfully.
+2025-03-29 08:10:07 [INFO] Processing file: olist_customers_dataset_2025_03_24.csv -> Target table: olist_customers_dataset
+2025-03-29 08:10:07 [INFO] Read CSV with shape: (99441, 5)
+2025-03-29 08:10:08 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_customers_dataset does not exist; it will be created.
+2025-03-29 08:10:13 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_customers_dataset.
+2025-03-29 08:10:13 [INFO] Moved olist_customers_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:10:13 [INFO] Processing file: olist_sellers_dataset_2025_03_24.csv -> Target table: olist_sellers_dataset
+2025-03-29 08:10:13 [INFO] Read CSV with shape: (3095, 4)
+2025-03-29 08:10:14 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_sellers_dataset does not exist; it will be created.
+2025-03-29 08:10:16 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_sellers_dataset.
+2025-03-29 08:10:16 [INFO] Moved olist_sellers_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:10:16 [INFO] Processing file: olist_orders_dataset_2025_03_24.csv -> Target table: olist_orders_dataset
+2025-03-29 08:10:16 [INFO] Read CSV with shape: (99441, 8)
+2025-03-29 08:10:17 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_orders_dataset does not exist; it will be created.
+2025-03-29 08:10:24 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_orders_dataset.
+2025-03-29 08:10:24 [INFO] Moved olist_orders_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:10:24 [INFO] Processing file: olist_geolocation_dataset_2025_03_24.csv -> Target table: olist_geolocation_dataset
+2025-03-29 08:10:25 [INFO] Read CSV with shape: (1000163, 5)
+2025-03-29 08:10:26 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_geolocation_dataset does not exist; it will be created.
+2025-03-29 08:10:34 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_geolocation_dataset.
+2025-03-29 08:10:34 [INFO] Moved olist_geolocation_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:10:34 [INFO] Processing file: olist_order_reviews_dataset_2025_03_24.csv -> Target table: olist_order_reviews_dataset
+2025-03-29 08:10:34 [INFO] Read CSV with shape: (99224, 7)
+2025-03-29 08:10:34 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_order_reviews_dataset does not exist; it will be created.
+2025-03-29 08:10:40 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_order_reviews_dataset.
+2025-03-29 08:10:40 [INFO] Moved olist_order_reviews_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:10:40 [INFO] Processing file: olist_order_payments_dataset_2025_03_24.csv -> Target table: olist_order_payments_dataset
+2025-03-29 08:10:41 [INFO] Read CSV with shape: (103886, 5)
+2025-03-29 08:10:41 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_order_payments_dataset does not exist; it will be created.
+2025-03-29 08:10:47 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_order_payments_dataset.
+2025-03-29 08:10:47 [INFO] Moved olist_order_payments_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:10:47 [INFO] Processing file: olist_order_items_dataset_2025_03_24.csv -> Target table: olist_order_items_dataset
+2025-03-29 08:10:47 [INFO] Read CSV with shape: (112650, 7)
+2025-03-29 08:10:47 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_order_items_dataset does not exist; it will be created.
+2025-03-29 08:10:55 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_order_items_dataset.
+2025-03-29 08:10:55 [INFO] Moved olist_order_items_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:10:55 [INFO] Processing file: olist_products_dataset_2025_03_24.csv -> Target table: olist_products_dataset
+2025-03-29 08:10:55 [INFO] Read CSV with shape: (32951, 9)
+2025-03-29 08:10:56 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.olist_products_dataset does not exist; it will be created.
+2025-03-29 08:11:00 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.olist_products_dataset.
+2025-03-29 08:11:00 [INFO] Moved olist_products_dataset_2025_03_24.csv to backup folder.
+2025-03-29 08:11:00 [INFO] Processing file: product_category_name_translation_2025_03_24.csv -> Target table: product_category_name_translation
+2025-03-29 08:11:00 [INFO] Read CSV with shape: (71, 2)
+2025-03-29 08:11:01 [INFO] BigQuery table olist-ecommerce-454812.olist_data_staging.product_category_name_translation does not exist; it will be created.
+2025-03-29 08:11:02 [INFO] Data successfully loaded into olist-ecommerce-454812.olist_data_staging.product_category_name_translation.
+2025-03-29 08:11:02 [INFO] Moved product_category_name_translation_2025_03_24.csv to backup folder.
+2025-03-29 08:11:02 [INFO] CSV import process completed.
