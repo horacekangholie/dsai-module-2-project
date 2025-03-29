@@ -64,3 +64,5 @@ FROM joined
 -- which assume data already in table never change
 
 -- 
+--   WHERE order_id_item NOT IN (SELECT order_id_item FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`)
+-- 

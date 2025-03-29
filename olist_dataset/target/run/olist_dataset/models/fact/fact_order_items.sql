@@ -1,15 +1,18 @@
-
+-- back compat for old kwarg name
   
+  
+        
+            
+	    
+	    
+            
+        
     
 
-    create or replace table `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
-      
-    
     
 
-    OPTIONS()
-    as (
-      -- models/fact/fact_order_items.sql
+    merge into `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items` as DBT_INTERNAL_DEST
+        using (-- models/fact/fact_order_items.sql
 
 
 
@@ -75,5 +78,20 @@ FROM joined
 -- which assume data already in table never change
 
 -- 
-    );
-  
+--   WHERE order_id_item NOT IN (SELECT order_id_item FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`)
+-- 
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.order_id_item = DBT_INTERNAL_DEST.order_id_item))
+
+    
+    when matched then update set
+        `customer_id` = DBT_INTERNAL_SOURCE.`customer_id`,`order_id` = DBT_INTERNAL_SOURCE.`order_id`,`order_item_id` = DBT_INTERNAL_SOURCE.`order_item_id`,`product_id` = DBT_INTERNAL_SOURCE.`product_id`,`seller_id` = DBT_INTERNAL_SOURCE.`seller_id`,`price` = DBT_INTERNAL_SOURCE.`price`,`freight_value` = DBT_INTERNAL_SOURCE.`freight_value`,`order_purchase_timestamp` = DBT_INTERNAL_SOURCE.`order_purchase_timestamp`,`order_approved_at` = DBT_INTERNAL_SOURCE.`order_approved_at`,`order_delivered_customer_date` = DBT_INTERNAL_SOURCE.`order_delivered_customer_date`,`order_estimated_delivery_date` = DBT_INTERNAL_SOURCE.`order_estimated_delivery_date`,`order_id_item` = DBT_INTERNAL_SOURCE.`order_id_item`
+    
+
+    when not matched then insert
+        (`customer_id`, `order_id`, `order_item_id`, `product_id`, `seller_id`, `price`, `freight_value`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `order_id_item`)
+    values
+        (`customer_id`, `order_id`, `order_item_id`, `product_id`, `seller_id`, `price`, `freight_value`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `order_id_item`)
+
+
+    

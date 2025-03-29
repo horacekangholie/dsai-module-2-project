@@ -27953,3 +27953,2363 @@ having count(*) > 1
 [0m13:57:33.976130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6a5d65e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe676e2abc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6a5a059f0>]}
 [0m13:57:33.976911 [debug] [MainThread]: Flushing usage events
 [0m13:57:34.949879 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:28:37.975502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff55603dff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5550595d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff555059570>]}
+
+
+============================== 19:28:37.981168 | 87a9e489-67df-4823-a1f0-d50a63d85fc8 ==============================
+[0m19:28:37.981168 [info ] [MainThread]: Running with dbt=1.9.2
+[0m19:28:37.981737 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/kangh/.dbt', 'log_path': '/home/kangh/dsai-module-2-project/olist_dataset/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:28:38.005343 [info ] [MainThread]: dbt version: 1.9.2
+[0m19:28:38.005875 [info ] [MainThread]: python version: 3.10.16
+[0m19:28:38.006226 [info ] [MainThread]: python path: /home/kangh/miniconda3/envs/elt/bin/python3.10
+[0m19:28:38.006558 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m19:28:39.717263 [info ] [MainThread]: Using profiles dir at /home/kangh/.dbt
+[0m19:28:39.718113 [info ] [MainThread]: Using profiles.yml file at /home/kangh/.dbt/profiles.yml
+[0m19:28:39.718513 [info ] [MainThread]: Using dbt_project.yml file at /home/kangh/dsai-module-2-project/olist_dataset/dbt_project.yml
+[0m19:28:39.718886 [info ] [MainThread]: adapter type: bigquery
+[0m19:28:39.719262 [info ] [MainThread]: adapter version: 1.9.1
+[0m19:28:39.854454 [info ] [MainThread]: Configuration:
+[0m19:28:39.855232 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:28:39.855663 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:28:39.856020 [info ] [MainThread]: Required dependencies:
+[0m19:28:39.856392 [debug] [MainThread]: Executing "git --help"
+[0m19:28:39.860884 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:28:39.861444 [debug] [MainThread]: STDERR: "b''"
+[0m19:28:39.861831 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:28:39.862241 [info ] [MainThread]: Connection:
+[0m19:28:39.862639 [info ] [MainThread]:   method: oauth
+[0m19:28:39.863000 [info ] [MainThread]:   database: olist-ecommerce-454812
+[0m19:28:39.863364 [info ] [MainThread]:   execution_project: olist-ecommerce-454812
+[0m19:28:39.863709 [info ] [MainThread]:   schema: olist_data_ingestion
+[0m19:28:39.863991 [info ] [MainThread]:   location: US
+[0m19:28:39.864376 [info ] [MainThread]:   priority: interactive
+[0m19:28:39.864785 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m19:28:39.865112 [info ] [MainThread]:   impersonate_service_account: None
+[0m19:28:39.865487 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m19:28:39.865865 [info ] [MainThread]:   job_retries: 1
+[0m19:28:39.866196 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m19:28:39.866562 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m19:28:39.866918 [info ] [MainThread]:   timeout_seconds: 300
+[0m19:28:39.867220 [info ] [MainThread]:   client_id: None
+[0m19:28:39.867542 [info ] [MainThread]:   token_uri: None
+[0m19:28:39.867906 [info ] [MainThread]:   dataproc_region: None
+[0m19:28:39.868309 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m19:28:39.868906 [info ] [MainThread]:   gcs_bucket: None
+[0m19:28:39.869564 [info ] [MainThread]:   dataproc_batch: None
+[0m19:28:39.870614 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:28:40.005314 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m19:28:40.005921 [debug] [MainThread]: On debug: select 1 as id
+[0m19:28:40.006350 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:28:41.870407 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:7dba1394-a774-4d82-9dea-9ba2c9803dca&page=queryresults
+[0m19:28:42.756580 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:28:42.757757 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:28:42.759081 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.846638, "process_in_blocks": "287432", "process_kernel_time": 1.500905, "process_mem_max_rss": "244808", "process_out_blocks": "24", "process_user_time": 3.245464}
+[0m19:28:42.760155 [debug] [MainThread]: Command `dbt debug` succeeded at 19:28:42.759912 after 4.85 seconds
+[0m19:28:42.760899 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:28:42.761799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff55603dff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff527235240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5271b5210>]}
+[0m19:28:42.762711 [debug] [MainThread]: Flushing usage events
+[0m19:28:43.726617 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:29:14.589818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88df541fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88de47d5a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88de47d540>]}
+
+
+============================== 19:29:14.592295 | a4b4948b-b428-4aaf-ace2-a86add5fdd6d ==============================
+[0m19:29:14.592295 [info ] [MainThread]: Running with dbt=1.9.2
+[0m19:29:14.592811 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/kangh/dsai-module-2-project/olist_dataset/logs', 'profiles_dir': '/home/kangh/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:29:14.598334 [info ] [MainThread]: dbt version: 1.9.2
+[0m19:29:14.598738 [info ] [MainThread]: python version: 3.10.16
+[0m19:29:14.599057 [info ] [MainThread]: python path: /home/kangh/miniconda3/envs/elt/bin/python3.10
+[0m19:29:14.599332 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m19:29:14.602710 [info ] [MainThread]: Using profiles dir at /home/kangh/.dbt
+[0m19:29:14.603590 [info ] [MainThread]: Using profiles.yml file at /home/kangh/.dbt/profiles.yml
+[0m19:29:14.604463 [info ] [MainThread]: Using dbt_project.yml file at /home/kangh/dsai-module-2-project/olist_dataset/dbt_project.yml
+[0m19:29:14.714515 [info ] [MainThread]: Configuration:
+[0m19:29:14.715088 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:29:14.715426 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:29:14.715754 [info ] [MainThread]: Required dependencies:
+[0m19:29:14.716068 [debug] [MainThread]: Executing "git --help"
+[0m19:29:14.718407 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:29:14.718857 [debug] [MainThread]: STDERR: "b''"
+[0m19:29:14.719168 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:29:14.719481 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:29:14.719776 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:29:14.720101 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'olist_dataset'
+
+
+[0m19:29:14.720959 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.1892345, "process_in_blocks": "0", "process_kernel_time": 0.07753, "process_mem_max_rss": "93468", "process_out_blocks": "24", "process_user_time": 1.114495}
+[0m19:29:14.721405 [debug] [MainThread]: Command `dbt debug` failed at 19:29:14.721309 after 0.19 seconds
+[0m19:29:14.721773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88df541fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88deb1f220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88df384940>]}
+[0m19:29:14.722166 [debug] [MainThread]: Flushing usage events
+[0m19:29:15.733180 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:30:20.131784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbc39c5ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbc28c95d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbc28c94e0>]}
+
+
+============================== 19:30:20.135747 | f08b9955-258e-4326-b287-e7905d69d3c6 ==============================
+[0m19:30:20.135747 [info ] [MainThread]: Running with dbt=1.9.2
+[0m19:30:20.136258 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kangh/dsai-module-2-project/olist_dataset', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/kangh/dsai-module-2-project/olist_dataset/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:30:20.151457 [info ] [MainThread]: dbt version: 1.9.2
+[0m19:30:20.152013 [info ] [MainThread]: python version: 3.10.16
+[0m19:30:20.152335 [info ] [MainThread]: python path: /home/kangh/miniconda3/envs/elt/bin/python3.10
+[0m19:30:20.152635 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m19:30:21.981089 [info ] [MainThread]: Using profiles dir at /home/kangh/dsai-module-2-project/olist_dataset
+[0m19:30:21.981672 [info ] [MainThread]: Using profiles.yml file at /home/kangh/dsai-module-2-project/olist_dataset/profiles.yml
+[0m19:30:21.982105 [info ] [MainThread]: Using dbt_project.yml file at /home/kangh/dsai-module-2-project/olist_dataset/dbt_project.yml
+[0m19:30:21.982676 [info ] [MainThread]: adapter type: bigquery
+[0m19:30:21.983018 [info ] [MainThread]: adapter version: 1.9.1
+[0m19:30:22.092167 [info ] [MainThread]: Configuration:
+[0m19:30:22.092734 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:30:22.093078 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:30:22.093387 [info ] [MainThread]: Required dependencies:
+[0m19:30:22.093696 [debug] [MainThread]: Executing "git --help"
+[0m19:30:22.098091 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:30:22.098538 [debug] [MainThread]: STDERR: "b''"
+[0m19:30:22.098805 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:30:22.099111 [info ] [MainThread]: Connection:
+[0m19:30:22.099421 [info ] [MainThread]:   method: oauth
+[0m19:30:22.099699 [info ] [MainThread]:   database: olist-ecommerce-454812
+[0m19:30:22.099991 [info ] [MainThread]:   execution_project: olist-ecommerce-454812
+[0m19:30:22.100271 [info ] [MainThread]:   schema: olist_data_ingestion
+[0m19:30:22.100539 [info ] [MainThread]:   location: US
+[0m19:30:22.100807 [info ] [MainThread]:   priority: interactive
+[0m19:30:22.101078 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m19:30:22.101346 [info ] [MainThread]:   impersonate_service_account: None
+[0m19:30:22.101638 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m19:30:22.101936 [info ] [MainThread]:   job_retries: 1
+[0m19:30:22.102223 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m19:30:22.102488 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m19:30:22.102753 [info ] [MainThread]:   timeout_seconds: 300
+[0m19:30:22.103022 [info ] [MainThread]:   client_id: None
+[0m19:30:22.103279 [info ] [MainThread]:   token_uri: None
+[0m19:30:22.103533 [info ] [MainThread]:   dataproc_region: None
+[0m19:30:22.103799 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m19:30:22.104065 [info ] [MainThread]:   gcs_bucket: None
+[0m19:30:22.104327 [info ] [MainThread]:   dataproc_batch: None
+[0m19:30:22.104791 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:30:22.212620 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m19:30:22.213182 [debug] [MainThread]: On debug: select 1 as id
+[0m19:30:22.213552 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:30:23.864979 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:b7f86433-2cc4-47b5-867c-1a6c0f25b760&page=queryresults
+[0m19:30:24.735955 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:30:24.737105 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:30:24.738371 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.6708417, "process_in_blocks": "277896", "process_kernel_time": 1.360431, "process_mem_max_rss": "247684", "process_out_blocks": "32", "process_user_time": 3.046184}
+[0m19:30:24.739257 [debug] [MainThread]: Command `dbt debug` succeeded at 19:30:24.739044 after 4.67 seconds
+[0m19:30:24.739985 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:30:24.740727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbc39c5ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdb94922380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdb949c2440>]}
+[0m19:30:24.741595 [debug] [MainThread]: Flushing usage events
+[0m19:30:25.735603 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:30:48.546300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f685624a020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68551356f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6855135690>]}
+
+
+============================== 19:30:48.549211 | e9303c67-6958-469a-80fe-1e9c4f70690b ==============================
+[0m19:30:48.549211 [info ] [MainThread]: Running with dbt=1.9.2
+[0m19:30:48.549730 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kangh/dsai-module-2-project/olist_dataset', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/kangh/dsai-module-2-project/olist_dataset/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m19:30:49.666316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f685517b790>]}
+[0m19:30:49.734650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6855973c40>]}
+[0m19:30:49.735453 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:30:49.849728 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m19:30:50.162632 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:30:50.163477 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:30:50.220476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6826e78d60>]}
+[0m19:30:50.322365 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/manifest.json
+[0m19:30:50.325684 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/semantic_manifest.json
+[0m19:30:50.343435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6826f65000>]}
+[0m19:30:50.344041 [info ] [MainThread]: Found 3 snapshots, 6 models, 33 data tests, 9 sources, 491 macros
+[0m19:30:50.344460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6826f64760>]}
+[0m19:30:50.346538 [info ] [MainThread]: 
+[0m19:30:50.346983 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:30:50.347326 [info ] [MainThread]: 
+[0m19:30:50.347845 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:30:50.352366 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_olist-ecommerce-454812'
+[0m19:30:50.353343 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:30:51.358480 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:30:51.723597 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812, now list_olist-ecommerce-454812_olist_data_snapshots)
+[0m19:30:51.725162 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:30:52.149390 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_snapshots, now list_olist-ecommerce-454812_olist_data_ingestion_fact_tables)
+[0m19:30:52.152021 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:30:52.530545 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_ingestion_fact_tables, now list_olist-ecommerce-454812_olist_data_ingestion_dim_tables)
+[0m19:30:52.532683 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:30:52.925216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6826f65270>]}
+[0m19:30:52.926765 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:30:52.934312 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_customer
+[0m19:30:52.935829 [info ] [Thread-1 (]: 1 of 6 START sql table model olist_data_ingestion_dim_tables.dim_customer ...... [RUN]
+[0m19:30:52.939430 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_ingestion_dim_tables, now model.olist_dataset.dim_customer)
+[0m19:30:52.940480 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_customer
+[0m19:30:52.961327 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_customer"
+[0m19:30:52.963450 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_customer
+[0m19:30:52.977473 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:30:53.473829 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_customer"
+[0m19:30:53.477690 [debug] [Thread-1 (]: On model.olist_dataset.dim_customer: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_customer"} */
+
+  
+    
+
+    create or replace table `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/star/dim_customer.sql
+
+-- This is incremental approach (Type 1 SCD)
+-- 
+
+-- WITH source AS (
+--     SELECT
+--         customer_id,
+--         customer_unique_id,
+--         customer_zip_code_prefix,
+--         customer_city,
+--         customer_state,
+--         CAST(last_updated AS TIMESTAMP) AS last_updated
+--     from `olist-ecommerce-454812`.`olist_data_staging`.`olist_customers_dataset`
+-- )
+
+-- SELECT * FROM source
+
+-- 
+
+
+-- This is snapshot approach, refer to customer_snapshot.sql (Type 2 SCD)
+
+
+SELECT
+    customer_id,
+    customer_unique_id,
+    customer_zip_code_prefix,
+    customer_city,
+    customer_state,
+    dbt_valid_from,
+    dbt_valid_to
+FROM `olist-ecommerce-454812`.`olist_data_snapshots`.`customer_snapshot`
+WHERE dbt_valid_to IS NULL
+    );
+  
+[0m19:30:54.043643 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:806b0d3d-9e5e-4ff8-8603-8f6db97651a4&page=queryresults
+[0m19:30:57.531483 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68562b6410>]}
+[0m19:30:57.532456 [info ] [Thread-1 (]: 1 of 6 OK created sql table model olist_data_ingestion_dim_tables.dim_customer . [[32mCREATE TABLE (99.4k rows, 9.5 MiB processed)[0m in 4.59s]
+[0m19:30:57.533191 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_customer
+[0m19:30:57.533662 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_geolocation
+[0m19:30:57.534375 [info ] [Thread-1 (]: 2 of 6 START sql incremental model olist_data_ingestion_dim_tables.dim_geolocation  [RUN]
+[0m19:30:57.534923 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_customer, now model.olist_dataset.dim_geolocation)
+[0m19:30:57.535293 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_geolocation
+[0m19:30:57.541318 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_geolocation"
+[0m19:30:57.543012 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_geolocation
+[0m19:30:57.570317 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:30:57.996973 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_geolocation"
+[0m19:30:57.997878 [debug] [Thread-1 (]: On model.olist_dataset.dim_geolocation: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_geolocation"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation` as DBT_INTERNAL_DEST
+        using (-- models/star/dim_geolocation.sql
+
+-- This is incremental approach (Type 1 SCD)
+
+
+WITH source AS (
+  SELECT
+    geolocation_zip_code_prefix,
+    geolocation_city,
+    geolocation_state,
+    CAST(last_updated AS TIMESTAMP) AS last_updated,
+    ROW_NUMBER() OVER (
+      PARTITION BY geolocation_zip_code_prefix
+      ORDER BY last_updated DESC
+    ) as rn
+  FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_geolocation_dataset`
+)
+
+SELECT * FROM source
+WHERE rn = 1
+
+-- Comment out this part as incremental_strategy='merge' add to config
+-- The logic of this part is it filter out those geolocation_zip_code_prefix that already in dim_geolocation table
+-- which assume data already in table never change
+
+-- 
+--   WHERE geolocation_zip_code_prefix NOT IN (
+--       SELECT geolocation_zip_code_prefix FROM `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation`
+--   )
+-- 
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.geolocation_zip_code_prefix = DBT_INTERNAL_DEST.geolocation_zip_code_prefix))
+
+    
+    when matched then update set
+        `geolocation_zip_code_prefix` = DBT_INTERNAL_SOURCE.`geolocation_zip_code_prefix`,`geolocation_city` = DBT_INTERNAL_SOURCE.`geolocation_city`,`geolocation_state` = DBT_INTERNAL_SOURCE.`geolocation_state`,`last_updated` = DBT_INTERNAL_SOURCE.`last_updated`,`rn` = DBT_INTERNAL_SOURCE.`rn`
+    
+
+    when not matched then insert
+        (`geolocation_zip_code_prefix`, `geolocation_city`, `geolocation_state`, `last_updated`, `rn`)
+    values
+        (`geolocation_zip_code_prefix`, `geolocation_city`, `geolocation_state`, `last_updated`, `rn`)
+
+
+    
+[0m19:30:58.582123 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:930c436a-eb83-451b-91e7-ce467b88c796&page=queryresults
+[0m19:31:01.724382 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6826415870>]}
+[0m19:31:01.726156 [info ] [Thread-1 (]: 2 of 6 OK created sql incremental model olist_data_ingestion_dim_tables.dim_geolocation  [[32mMERGE (19.0k rows, 31.8 MiB processed)[0m in 4.19s]
+[0m19:31:01.727860 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_geolocation
+[0m19:31:01.728882 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_product
+[0m19:31:01.730131 [info ] [Thread-1 (]: 3 of 6 START sql table model olist_data_ingestion_dim_tables.dim_product ....... [RUN]
+[0m19:31:01.731474 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_geolocation, now model.olist_dataset.dim_product)
+[0m19:31:01.732577 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_product
+[0m19:31:01.741032 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_product"
+[0m19:31:01.742125 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_product
+[0m19:31:01.745571 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:02.128238 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_product"
+[0m19:31:02.129375 [debug] [Thread-1 (]: On model.olist_dataset.dim_product: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_product"} */
+
+  
+    
+
+    create or replace table `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_product`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/star/dim_product.sql
+
+-- This is incremental approach (Type 1 SCD)
+-- 
+
+-- WITH source AS (
+--     SELECT
+--         product_id,
+--         product_category_name,
+--         product_name_lenght,
+--         product_description_lenght,
+--         product_photos_qty,
+--         product_weight_g,
+--         product_length_cm,
+--         product_height_cm,
+--         product_width_cm,
+--         CAST(last_updated AS TIMESTAMP) AS last_updated
+--     FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_products_dataset`
+-- )
+
+-- SELECT * FROM source
+
+-- 
+
+-- This is snapshot approach, refer to product_snapshot (Type 2 SCD)
+
+
+SELECT
+    product_id,
+    COALESCE(product_category_name, 'UNKNOWN') AS product_category_name,
+    product_name_lenght,
+    product_description_lenght,
+    product_photos_qty,
+    product_weight_g,
+    product_length_cm,
+    product_height_cm,
+    product_width_cm,
+    dbt_valid_from,
+    dbt_valid_to
+FROM `olist-ecommerce-454812`.`olist_data_snapshots`.`product_snapshot`
+WHERE dbt_valid_to IS NULL
+    );
+  
+[0m19:31:02.706436 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:1a8a50c6-409d-4a15-a994-1b8564d8252b&page=queryresults
+[0m19:31:05.296567 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68562b6410>]}
+[0m19:31:05.298451 [info ] [Thread-1 (]: 3 of 6 OK created sql table model olist_data_ingestion_dim_tables.dim_product .. [[32mCREATE TABLE (33.0k rows, 3.6 MiB processed)[0m in 3.57s]
+[0m19:31:05.299810 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_product
+[0m19:31:05.300760 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_seller
+[0m19:31:05.301840 [info ] [Thread-1 (]: 4 of 6 START sql table model olist_data_ingestion_dim_tables.dim_seller ........ [RUN]
+[0m19:31:05.302928 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_product, now model.olist_dataset.dim_seller)
+[0m19:31:05.303814 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_seller
+[0m19:31:05.313706 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_seller"
+[0m19:31:05.315374 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_seller
+[0m19:31:05.322785 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:04.692711 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_seller"
+[0m19:31:04.694490 [debug] [Thread-1 (]: On model.olist_dataset.dim_seller: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_seller"} */
+
+  
+    
+
+    create or replace table `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/star/dim_seller.sql
+
+-- This is incremental approach (Type 1 SCD)
+-- 
+
+-- WITH source AS (
+--     SELECT
+--         seller_id,
+--         seller_zip_code_prefix,
+--         seller_city,
+--         seller_state,
+--         CAST(last_updated AS TIMESTAMP) AS last_updated
+--     FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_sellers_dataset`
+-- )
+
+-- SELECT * FROM source
+
+-- 
+
+
+-- This is snapshot approach, refer to seller_snapshot (Type 2 SCD)
+
+
+SELECT
+    seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state,
+    dbt_valid_from,
+    dbt_valid_to
+FROM `olist-ecommerce-454812`.`olist_data_snapshots`.`seller_snapshot`
+WHERE dbt_valid_to IS NULL
+    );
+  
+[0m19:31:05.231698 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:a14b4538-56dd-4289-b181-d0d9f6633928&page=queryresults
+[0m19:31:07.563784 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68562b6410>]}
+[0m19:31:07.565532 [info ] [Thread-1 (]: 4 of 6 OK created sql table model olist_data_ingestion_dim_tables.dim_seller ... [[32mCREATE TABLE (3.1k rows, 200.0 KiB processed)[0m in 2.26s]
+[0m19:31:07.566832 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_seller
+[0m19:31:07.567700 [debug] [Thread-1 (]: Began running node model.olist_dataset.fact_order_items
+[0m19:31:07.568685 [info ] [Thread-1 (]: 5 of 6 START sql incremental model olist_data_ingestion_fact_tables.fact_order_items  [RUN]
+[0m19:31:07.569713 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_seller, now model.olist_dataset.fact_order_items)
+[0m19:31:07.570924 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.fact_order_items
+[0m19:31:07.580966 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.fact_order_items"
+[0m19:31:07.582574 [debug] [Thread-1 (]: Began executing node model.olist_dataset.fact_order_items
+[0m19:31:07.589850 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:07.973099 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.fact_order_items"
+[0m19:31:07.978998 [debug] [Thread-1 (]: On model.olist_dataset.fact_order_items: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.fact_order_items"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items` as DBT_INTERNAL_DEST
+        using (-- models/fact/fact_order_items.sql
+
+
+
+WITH orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        order_status,
+        order_purchase_timestamp,
+        order_approved_at,
+        order_delivered_customer_date,
+        order_estimated_delivery_date
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_orders_dataset`
+    WHERE order_status IN ('delivered', 'canceled')  -- Only include order that has finalized, delivered or cancelled
+),
+
+order_items AS (
+    SELECT
+        order_id,
+        order_item_id,
+        product_id,
+        seller_id,
+        price,
+        freight_value
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_order_items_dataset`
+),
+
+joined AS (
+    SELECT
+        o.customer_id,
+        oi.order_id,
+        oi.order_item_id,
+        oi.product_id,
+        oi.seller_id,
+        oi.price,
+        oi.freight_value,
+        o.order_purchase_timestamp,
+        o.order_approved_at,
+        o.order_delivered_customer_date,
+        o.order_estimated_delivery_date,
+        CONCAT(oi.order_id, '_', CAST(oi.order_item_id AS STRING)) AS order_id_item
+    FROM order_items oi
+    INNER JOIN orders o USING (order_id)
+)
+
+SELECT
+    customer_id,
+    order_id,
+    order_item_id,
+    product_id,
+    seller_id,
+    price,
+    freight_value,
+    order_purchase_timestamp,
+    order_approved_at,
+    order_delivered_customer_date,
+    order_estimated_delivery_date,
+    order_id_item
+FROM joined
+
+-- Comment out this part as incremental_strategy='merge' add to config
+-- The logic of this part is it filter out those order item id that already in fact_order_item table
+-- which assume data already in table never change
+
+-- 
+--   WHERE order_id_item NOT IN (SELECT order_id_item FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`)
+-- 
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.order_id_item = DBT_INTERNAL_DEST.order_id_item))
+
+    
+    when matched then update set
+        `customer_id` = DBT_INTERNAL_SOURCE.`customer_id`,`order_id` = DBT_INTERNAL_SOURCE.`order_id`,`order_item_id` = DBT_INTERNAL_SOURCE.`order_item_id`,`product_id` = DBT_INTERNAL_SOURCE.`product_id`,`seller_id` = DBT_INTERNAL_SOURCE.`seller_id`,`price` = DBT_INTERNAL_SOURCE.`price`,`freight_value` = DBT_INTERNAL_SOURCE.`freight_value`,`order_purchase_timestamp` = DBT_INTERNAL_SOURCE.`order_purchase_timestamp`,`order_approved_at` = DBT_INTERNAL_SOURCE.`order_approved_at`,`order_delivered_customer_date` = DBT_INTERNAL_SOURCE.`order_delivered_customer_date`,`order_estimated_delivery_date` = DBT_INTERNAL_SOURCE.`order_estimated_delivery_date`,`order_id_item` = DBT_INTERNAL_SOURCE.`order_id_item`
+    
+
+    when not matched then insert
+        (`customer_id`, `order_id`, `order_item_id`, `product_id`, `seller_id`, `price`, `freight_value`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `order_id_item`)
+    values
+        (`customer_id`, `order_id`, `order_item_id`, `product_id`, `seller_id`, `price`, `freight_value`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `order_id_item`)
+
+
+    
+[0m19:31:08.521813 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:3f027998-2609-435f-8bee-effaf649bc78&page=queryresults
+[0m19:31:15.760228 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68556ae920>]}
+[0m19:31:15.761571 [info ] [Thread-1 (]: 5 of 6 OK created sql incremental model olist_data_ingestion_fact_tables.fact_order_items  [[32mMERGE (110.7k rows, 58.5 MiB processed)[0m in 8.19s]
+[0m19:31:15.762682 [debug] [Thread-1 (]: Finished running node model.olist_dataset.fact_order_items
+[0m19:31:15.763460 [debug] [Thread-1 (]: Began running node model.olist_dataset.fact_orders
+[0m19:31:15.764320 [info ] [Thread-1 (]: 6 of 6 START sql incremental model olist_data_ingestion_fact_tables.fact_orders  [RUN]
+[0m19:31:15.766512 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.fact_order_items, now model.olist_dataset.fact_orders)
+[0m19:31:15.767318 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.fact_orders
+[0m19:31:15.779057 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.fact_orders"
+[0m19:31:15.780694 [debug] [Thread-1 (]: Began executing node model.olist_dataset.fact_orders
+[0m19:31:15.787439 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:16.338877 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.fact_orders"
+[0m19:31:16.340610 [debug] [Thread-1 (]: On model.olist_dataset.fact_orders: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.fact_orders"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders` as DBT_INTERNAL_DEST
+        using (-- models/fact/fact_orders.sql
+
+
+
+WITH orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        order_status,
+        order_purchase_timestamp,
+        order_approved_at,
+        order_delivered_carrier_date,
+        order_delivered_customer_date,
+        order_estimated_delivery_date
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_orders_dataset`
+    WHERE order_status IN ('delivered', 'canceled')   -- Only include delivered or canceled
+),
+
+payments AS (
+    SELECT
+        order_id,
+        ROUND(SUM(ifnull(payment_value, 0.0)), 2) AS payment_value
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_order_payments_dataset`
+    GROUP BY order_id
+)
+
+SELECT
+    o.order_id,
+    o.customer_id,
+    o.order_status,
+    o.order_purchase_timestamp,
+    o.order_approved_at,
+    o.order_delivered_carrier_date,
+    o.order_delivered_customer_date,
+    o.order_estimated_delivery_date,
+    p.payment_value
+FROM orders o
+LEFT JOIN payments p USING (order_id)
+
+-- Comment out this part as incremental_strategy='merge' add to config
+-- The logic of this part is it filter out those order id that already in fact_orders table
+-- which assume data already in table never change
+
+-- 
+--   WHERE order_id NOT IN (SELECT order_id FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`)
+-- 
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.order_id = DBT_INTERNAL_DEST.order_id))
+
+    
+    when matched then update set
+        `order_id` = DBT_INTERNAL_SOURCE.`order_id`,`customer_id` = DBT_INTERNAL_SOURCE.`customer_id`,`order_status` = DBT_INTERNAL_SOURCE.`order_status`,`order_purchase_timestamp` = DBT_INTERNAL_SOURCE.`order_purchase_timestamp`,`order_approved_at` = DBT_INTERNAL_SOURCE.`order_approved_at`,`order_delivered_carrier_date` = DBT_INTERNAL_SOURCE.`order_delivered_carrier_date`,`order_delivered_customer_date` = DBT_INTERNAL_SOURCE.`order_delivered_customer_date`,`order_estimated_delivery_date` = DBT_INTERNAL_SOURCE.`order_estimated_delivery_date`,`payment_value` = DBT_INTERNAL_SOURCE.`payment_value`
+    
+
+    when not matched then insert
+        (`order_id`, `customer_id`, `order_status`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_carrier_date`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `payment_value`)
+    values
+        (`order_id`, `customer_id`, `order_status`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_carrier_date`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `payment_value`)
+
+
+    
+[0m19:31:16.983582 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:af00237f-f231-431d-8f48-ab27ef83be55&page=queryresults
+[0m19:31:22.536557 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e9303c67-6958-469a-80fe-1e9c4f70690b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68556ae920>]}
+[0m19:31:22.537870 [info ] [Thread-1 (]: 6 of 6 OK created sql incremental model olist_data_ingestion_fact_tables.fact_orders  [[32mMERGE (97.1k rows, 39.3 MiB processed)[0m in 6.77s]
+[0m19:31:22.539013 [debug] [Thread-1 (]: Finished running node model.olist_dataset.fact_orders
+[0m19:31:22.542434 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:31:22.544351 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:31:22.545079 [debug] [MainThread]: Connection 'model.olist_dataset.fact_orders' was properly closed.
+[0m19:31:22.546066 [info ] [MainThread]: 
+[0m19:31:22.546808 [info ] [MainThread]: Finished running 3 incremental models, 3 table models in 0 hours 0 minutes and 32.20 seconds (32.20s).
+[0m19:31:22.549197 [debug] [MainThread]: Command end result
+[0m19:31:22.612379 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/manifest.json
+[0m19:31:22.615701 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/semantic_manifest.json
+[0m19:31:22.627448 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kangh/dsai-module-2-project/olist_dataset/target/run_results.json
+[0m19:31:22.628053 [info ] [MainThread]: 
+[0m19:31:22.628604 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:31:22.629029 [info ] [MainThread]: 
+[0m19:31:22.629502 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m19:31:22.630379 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 35.16576, "process_in_blocks": "8008", "process_kernel_time": 1.192186, "process_mem_max_rss": "260260", "process_out_blocks": "2728", "process_user_time": 3.760717}
+[0m19:31:22.631048 [debug] [MainThread]: Command `dbt run` succeeded at 19:31:22.630914 after 35.17 seconds
+[0m19:31:22.631625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f685624a020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6826cc7af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6826cc78e0>]}
+[0m19:31:22.632151 [debug] [MainThread]: Flushing usage events
+[0m19:31:23.866727 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:31:30.794870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b7f460b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b6ebd750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b6ebd6f0>]}
+
+
+============================== 19:31:30.797251 | 290d96b3-7b48-48d9-8bb9-31282c077913 ==============================
+[0m19:31:30.797251 [info ] [MainThread]: Running with dbt=1.9.2
+[0m19:31:30.797752 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kangh/dsai-module-2-project/olist_dataset', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/kangh/dsai-module-2-project/olist_dataset/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:31:31.842342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa889088fa0>]}
+[0m19:31:31.910413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b7d66bf0>]}
+[0m19:31:31.911203 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:31:32.015250 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m19:31:32.226695 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:31:32.227202 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:31:32.283404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8889b8d90>]}
+[0m19:31:32.383997 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/manifest.json
+[0m19:31:32.385655 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/semantic_manifest.json
+[0m19:31:32.397773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888ac82e0>]}
+[0m19:31:32.398357 [info ] [MainThread]: Found 3 snapshots, 6 models, 33 data tests, 9 sources, 491 macros
+[0m19:31:32.398774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888ac8430>]}
+[0m19:31:32.400722 [info ] [MainThread]: 
+[0m19:31:32.401126 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:31:32.401434 [info ] [MainThread]: 
+[0m19:31:32.401918 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:31:32.406414 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_olist-ecommerce-454812'
+[0m19:31:32.406902 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:31:33.456432 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:33.845809 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812, now list_olist-ecommerce-454812_olist_data_ingestion_dim_tables)
+[0m19:31:33.847971 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:34.248506 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_ingestion_dim_tables, now list_olist-ecommerce-454812_olist_data_snapshots)
+[0m19:31:34.249098 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:34.629412 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_snapshots, now list_olist-ecommerce-454812_olist_data_ingestion_fact_tables)
+[0m19:31:34.630330 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:34.995791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b6e89c00>]}
+[0m19:31:34.996503 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:31:35.005444 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_customer
+[0m19:31:35.006633 [info ] [Thread-1 (]: 1 of 6 START sql table model olist_data_ingestion_dim_tables.dim_customer ...... [RUN]
+[0m19:31:35.009000 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_ingestion_fact_tables, now model.olist_dataset.dim_customer)
+[0m19:31:35.009726 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_customer
+[0m19:31:35.023217 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_customer"
+[0m19:31:35.024199 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_customer
+[0m19:31:35.037046 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:35.426234 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_customer"
+[0m19:31:35.427460 [debug] [Thread-1 (]: On model.olist_dataset.dim_customer: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_customer"} */
+
+  
+    
+
+    create or replace table `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/star/dim_customer.sql
+
+-- This is incremental approach (Type 1 SCD)
+-- 
+
+-- WITH source AS (
+--     SELECT
+--         customer_id,
+--         customer_unique_id,
+--         customer_zip_code_prefix,
+--         customer_city,
+--         customer_state,
+--         CAST(last_updated AS TIMESTAMP) AS last_updated
+--     from `olist-ecommerce-454812`.`olist_data_staging`.`olist_customers_dataset`
+-- )
+
+-- SELECT * FROM source
+
+-- 
+
+
+-- This is snapshot approach, refer to customer_snapshot.sql (Type 2 SCD)
+
+
+SELECT
+    customer_id,
+    customer_unique_id,
+    customer_zip_code_prefix,
+    customer_city,
+    customer_state,
+    dbt_valid_from,
+    dbt_valid_to
+FROM `olist-ecommerce-454812`.`olist_data_snapshots`.`customer_snapshot`
+WHERE dbt_valid_to IS NULL
+    );
+  
+[0m19:31:36.026868 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:521275fa-56af-47dc-a17d-40707e486b4c&page=queryresults
+[0m19:31:37.955742 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b701dd80>]}
+[0m19:31:37.956539 [info ] [Thread-1 (]: 1 of 6 OK created sql table model olist_data_ingestion_dim_tables.dim_customer . [[32mCREATE TABLE (99.4k rows, 9.5 MiB processed)[0m in 2.95s]
+[0m19:31:37.957162 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_customer
+[0m19:31:37.957557 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_geolocation
+[0m19:31:37.957995 [info ] [Thread-1 (]: 2 of 6 START sql incremental model olist_data_ingestion_dim_tables.dim_geolocation  [RUN]
+[0m19:31:37.958512 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_customer, now model.olist_dataset.dim_geolocation)
+[0m19:31:37.958874 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_geolocation
+[0m19:31:37.964332 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_geolocation"
+[0m19:31:37.965181 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_geolocation
+[0m19:31:37.995318 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:38.392620 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_geolocation"
+[0m19:31:38.393492 [debug] [Thread-1 (]: On model.olist_dataset.dim_geolocation: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_geolocation"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation` as DBT_INTERNAL_DEST
+        using (-- models/star/dim_geolocation.sql
+
+-- This is incremental approach (Type 1 SCD)
+
+
+WITH source AS (
+  SELECT
+    geolocation_zip_code_prefix,
+    geolocation_city,
+    geolocation_state,
+    CAST(last_updated AS TIMESTAMP) AS last_updated,
+    ROW_NUMBER() OVER (
+      PARTITION BY geolocation_zip_code_prefix
+      ORDER BY last_updated DESC
+    ) as rn
+  FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_geolocation_dataset`
+)
+
+SELECT * FROM source
+WHERE rn = 1
+
+-- Comment out this part as incremental_strategy='merge' add to config
+-- The logic of this part is it filter out those geolocation_zip_code_prefix that already in dim_geolocation table
+-- which assume data already in table never change
+
+-- 
+--   WHERE geolocation_zip_code_prefix NOT IN (
+--       SELECT geolocation_zip_code_prefix FROM `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation`
+--   )
+-- 
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.geolocation_zip_code_prefix = DBT_INTERNAL_DEST.geolocation_zip_code_prefix))
+
+    
+    when matched then update set
+        `geolocation_zip_code_prefix` = DBT_INTERNAL_SOURCE.`geolocation_zip_code_prefix`,`geolocation_city` = DBT_INTERNAL_SOURCE.`geolocation_city`,`geolocation_state` = DBT_INTERNAL_SOURCE.`geolocation_state`,`last_updated` = DBT_INTERNAL_SOURCE.`last_updated`,`rn` = DBT_INTERNAL_SOURCE.`rn`
+    
+
+    when not matched then insert
+        (`geolocation_zip_code_prefix`, `geolocation_city`, `geolocation_state`, `last_updated`, `rn`)
+    values
+        (`geolocation_zip_code_prefix`, `geolocation_city`, `geolocation_state`, `last_updated`, `rn`)
+
+
+    
+[0m19:31:39.169018 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:557ebc51-50b3-4e27-9f0e-cb44783b124d&page=queryresults
+[0m19:31:42.094529 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88894e260>]}
+[0m19:31:42.095290 [info ] [Thread-1 (]: 2 of 6 OK created sql incremental model olist_data_ingestion_dim_tables.dim_geolocation  [[32mMERGE (19.0k rows, 31.8 MiB processed)[0m in 4.14s]
+[0m19:31:42.095890 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_geolocation
+[0m19:31:42.096286 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_product
+[0m19:31:42.096750 [info ] [Thread-1 (]: 3 of 6 START sql table model olist_data_ingestion_dim_tables.dim_product ....... [RUN]
+[0m19:31:42.097209 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_geolocation, now model.olist_dataset.dim_product)
+[0m19:31:42.097717 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_product
+[0m19:31:42.101707 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_product"
+[0m19:31:42.102277 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_product
+[0m19:31:42.104447 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:42.504075 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_product"
+[0m19:31:42.505440 [debug] [Thread-1 (]: On model.olist_dataset.dim_product: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_product"} */
+
+  
+    
+
+    create or replace table `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_product`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/star/dim_product.sql
+
+-- This is incremental approach (Type 1 SCD)
+-- 
+
+-- WITH source AS (
+--     SELECT
+--         product_id,
+--         product_category_name,
+--         product_name_lenght,
+--         product_description_lenght,
+--         product_photos_qty,
+--         product_weight_g,
+--         product_length_cm,
+--         product_height_cm,
+--         product_width_cm,
+--         CAST(last_updated AS TIMESTAMP) AS last_updated
+--     FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_products_dataset`
+-- )
+
+-- SELECT * FROM source
+
+-- 
+
+-- This is snapshot approach, refer to product_snapshot (Type 2 SCD)
+
+
+SELECT
+    product_id,
+    COALESCE(product_category_name, 'UNKNOWN') AS product_category_name,
+    product_name_lenght,
+    product_description_lenght,
+    product_photos_qty,
+    product_weight_g,
+    product_length_cm,
+    product_height_cm,
+    product_width_cm,
+    dbt_valid_from,
+    dbt_valid_to
+FROM `olist-ecommerce-454812`.`olist_data_snapshots`.`product_snapshot`
+WHERE dbt_valid_to IS NULL
+    );
+  
+[0m19:31:43.007503 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:837976bb-13f8-45a8-8a77-3f0562e86c86&page=queryresults
+[0m19:31:45.641078 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888b4c9a0>]}
+[0m19:31:45.642665 [info ] [Thread-1 (]: 3 of 6 OK created sql table model olist_data_ingestion_dim_tables.dim_product .. [[32mCREATE TABLE (33.0k rows, 3.6 MiB processed)[0m in 3.54s]
+[0m19:31:45.644122 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_product
+[0m19:31:45.645034 [debug] [Thread-1 (]: Began running node model.olist_dataset.dim_seller
+[0m19:31:45.646176 [info ] [Thread-1 (]: 4 of 6 START sql table model olist_data_ingestion_dim_tables.dim_seller ........ [RUN]
+[0m19:31:45.647779 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_product, now model.olist_dataset.dim_seller)
+[0m19:31:45.648798 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.dim_seller
+[0m19:31:45.657920 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.dim_seller"
+[0m19:31:45.659151 [debug] [Thread-1 (]: Began executing node model.olist_dataset.dim_seller
+[0m19:31:45.664170 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:46.018668 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.dim_seller"
+[0m19:31:46.020261 [debug] [Thread-1 (]: On model.olist_dataset.dim_seller: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.dim_seller"} */
+
+  
+    
+
+    create or replace table `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/star/dim_seller.sql
+
+-- This is incremental approach (Type 1 SCD)
+-- 
+
+-- WITH source AS (
+--     SELECT
+--         seller_id,
+--         seller_zip_code_prefix,
+--         seller_city,
+--         seller_state,
+--         CAST(last_updated AS TIMESTAMP) AS last_updated
+--     FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_sellers_dataset`
+-- )
+
+-- SELECT * FROM source
+
+-- 
+
+
+-- This is snapshot approach, refer to seller_snapshot (Type 2 SCD)
+
+
+SELECT
+    seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state,
+    dbt_valid_from,
+    dbt_valid_to
+FROM `olist-ecommerce-454812`.`olist_data_snapshots`.`seller_snapshot`
+WHERE dbt_valid_to IS NULL
+    );
+  
+[0m19:31:46.527658 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:b14f7472-b260-48f4-bb26-5606586dcba6&page=queryresults
+[0m19:31:48.851594 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88233dab0>]}
+[0m19:31:48.853357 [info ] [Thread-1 (]: 4 of 6 OK created sql table model olist_data_ingestion_dim_tables.dim_seller ... [[32mCREATE TABLE (3.1k rows, 200.0 KiB processed)[0m in 3.20s]
+[0m19:31:48.854831 [debug] [Thread-1 (]: Finished running node model.olist_dataset.dim_seller
+[0m19:31:48.855727 [debug] [Thread-1 (]: Began running node model.olist_dataset.fact_order_items
+[0m19:31:48.856790 [info ] [Thread-1 (]: 5 of 6 START sql incremental model olist_data_ingestion_fact_tables.fact_order_items  [RUN]
+[0m19:31:48.857806 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.dim_seller, now model.olist_dataset.fact_order_items)
+[0m19:31:48.859022 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.fact_order_items
+[0m19:31:48.865890 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.fact_order_items"
+[0m19:31:48.866945 [debug] [Thread-1 (]: Began executing node model.olist_dataset.fact_order_items
+[0m19:31:48.871120 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:49.284901 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.fact_order_items"
+[0m19:31:49.287014 [debug] [Thread-1 (]: On model.olist_dataset.fact_order_items: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.fact_order_items"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items` as DBT_INTERNAL_DEST
+        using (-- models/fact/fact_order_items.sql
+
+
+
+WITH orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        order_status,
+        order_purchase_timestamp,
+        order_approved_at,
+        order_delivered_customer_date,
+        order_estimated_delivery_date
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_orders_dataset`
+    WHERE order_status IN ('delivered', 'canceled')  -- Only include order that has finalized, delivered or cancelled
+),
+
+order_items AS (
+    SELECT
+        order_id,
+        order_item_id,
+        product_id,
+        seller_id,
+        price,
+        freight_value
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_order_items_dataset`
+),
+
+joined AS (
+    SELECT
+        o.customer_id,
+        oi.order_id,
+        oi.order_item_id,
+        oi.product_id,
+        oi.seller_id,
+        oi.price,
+        oi.freight_value,
+        o.order_purchase_timestamp,
+        o.order_approved_at,
+        o.order_delivered_customer_date,
+        o.order_estimated_delivery_date,
+        CONCAT(oi.order_id, '_', CAST(oi.order_item_id AS STRING)) AS order_id_item
+    FROM order_items oi
+    INNER JOIN orders o USING (order_id)
+)
+
+SELECT
+    customer_id,
+    order_id,
+    order_item_id,
+    product_id,
+    seller_id,
+    price,
+    freight_value,
+    order_purchase_timestamp,
+    order_approved_at,
+    order_delivered_customer_date,
+    order_estimated_delivery_date,
+    order_id_item
+FROM joined
+
+-- Comment out this part as incremental_strategy='merge' add to config
+-- The logic of this part is it filter out those order item id that already in fact_order_item table
+-- which assume data already in table never change
+
+-- 
+--   WHERE order_id_item NOT IN (SELECT order_id_item FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`)
+-- 
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.order_id_item = DBT_INTERNAL_DEST.order_id_item))
+
+    
+    when matched then update set
+        `customer_id` = DBT_INTERNAL_SOURCE.`customer_id`,`order_id` = DBT_INTERNAL_SOURCE.`order_id`,`order_item_id` = DBT_INTERNAL_SOURCE.`order_item_id`,`product_id` = DBT_INTERNAL_SOURCE.`product_id`,`seller_id` = DBT_INTERNAL_SOURCE.`seller_id`,`price` = DBT_INTERNAL_SOURCE.`price`,`freight_value` = DBT_INTERNAL_SOURCE.`freight_value`,`order_purchase_timestamp` = DBT_INTERNAL_SOURCE.`order_purchase_timestamp`,`order_approved_at` = DBT_INTERNAL_SOURCE.`order_approved_at`,`order_delivered_customer_date` = DBT_INTERNAL_SOURCE.`order_delivered_customer_date`,`order_estimated_delivery_date` = DBT_INTERNAL_SOURCE.`order_estimated_delivery_date`,`order_id_item` = DBT_INTERNAL_SOURCE.`order_id_item`
+    
+
+    when not matched then insert
+        (`customer_id`, `order_id`, `order_item_id`, `product_id`, `seller_id`, `price`, `freight_value`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `order_id_item`)
+    values
+        (`customer_id`, `order_id`, `order_item_id`, `product_id`, `seller_id`, `price`, `freight_value`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `order_id_item`)
+
+
+    
+[0m19:31:49.871121 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:f443ad70-e63c-4431-9124-7617d8baf68f&page=queryresults
+[0m19:31:57.443660 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888a2c5b0>]}
+[0m19:31:57.445360 [info ] [Thread-1 (]: 5 of 6 OK created sql incremental model olist_data_ingestion_fact_tables.fact_order_items  [[32mMERGE (110.7k rows, 58.5 MiB processed)[0m in 8.59s]
+[0m19:31:57.446649 [debug] [Thread-1 (]: Finished running node model.olist_dataset.fact_order_items
+[0m19:31:57.447478 [debug] [Thread-1 (]: Began running node model.olist_dataset.fact_orders
+[0m19:31:57.449289 [info ] [Thread-1 (]: 6 of 6 START sql incremental model olist_data_ingestion_fact_tables.fact_orders  [RUN]
+[0m19:31:57.450360 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_dataset.fact_order_items, now model.olist_dataset.fact_orders)
+[0m19:31:57.451048 [debug] [Thread-1 (]: Began compiling node model.olist_dataset.fact_orders
+[0m19:31:57.456763 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dataset.fact_orders"
+[0m19:31:57.457490 [debug] [Thread-1 (]: Began executing node model.olist_dataset.fact_orders
+[0m19:31:57.460245 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:57.831154 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dataset.fact_orders"
+[0m19:31:57.832631 [debug] [Thread-1 (]: On model.olist_dataset.fact_orders: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "model.olist_dataset.fact_orders"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders` as DBT_INTERNAL_DEST
+        using (-- models/fact/fact_orders.sql
+
+
+
+WITH orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        order_status,
+        order_purchase_timestamp,
+        order_approved_at,
+        order_delivered_carrier_date,
+        order_delivered_customer_date,
+        order_estimated_delivery_date
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_orders_dataset`
+    WHERE order_status IN ('delivered', 'canceled')   -- Only include delivered or canceled
+),
+
+payments AS (
+    SELECT
+        order_id,
+        ROUND(SUM(ifnull(payment_value, 0.0)), 2) AS payment_value
+    FROM `olist-ecommerce-454812`.`olist_data_staging`.`olist_order_payments_dataset`
+    GROUP BY order_id
+)
+
+SELECT
+    o.order_id,
+    o.customer_id,
+    o.order_status,
+    o.order_purchase_timestamp,
+    o.order_approved_at,
+    o.order_delivered_carrier_date,
+    o.order_delivered_customer_date,
+    o.order_estimated_delivery_date,
+    p.payment_value
+FROM orders o
+LEFT JOIN payments p USING (order_id)
+
+-- Comment out this part as incremental_strategy='merge' add to config
+-- The logic of this part is it filter out those order id that already in fact_orders table
+-- which assume data already in table never change
+
+-- 
+--   WHERE order_id NOT IN (SELECT order_id FROM `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`)
+-- 
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.order_id = DBT_INTERNAL_DEST.order_id))
+
+    
+    when matched then update set
+        `order_id` = DBT_INTERNAL_SOURCE.`order_id`,`customer_id` = DBT_INTERNAL_SOURCE.`customer_id`,`order_status` = DBT_INTERNAL_SOURCE.`order_status`,`order_purchase_timestamp` = DBT_INTERNAL_SOURCE.`order_purchase_timestamp`,`order_approved_at` = DBT_INTERNAL_SOURCE.`order_approved_at`,`order_delivered_carrier_date` = DBT_INTERNAL_SOURCE.`order_delivered_carrier_date`,`order_delivered_customer_date` = DBT_INTERNAL_SOURCE.`order_delivered_customer_date`,`order_estimated_delivery_date` = DBT_INTERNAL_SOURCE.`order_estimated_delivery_date`,`payment_value` = DBT_INTERNAL_SOURCE.`payment_value`
+    
+
+    when not matched then insert
+        (`order_id`, `customer_id`, `order_status`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_carrier_date`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `payment_value`)
+    values
+        (`order_id`, `customer_id`, `order_status`, `order_purchase_timestamp`, `order_approved_at`, `order_delivered_carrier_date`, `order_delivered_customer_date`, `order_estimated_delivery_date`, `payment_value`)
+
+
+    
+[0m19:31:58.371926 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:2967c495-3f83-46d3-adc9-f14a26996176&page=queryresults
+[0m19:32:03.792618 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '290d96b3-7b48-48d9-8bb9-31282c077913', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b701dd80>]}
+[0m19:32:03.795778 [info ] [Thread-1 (]: 6 of 6 OK created sql incremental model olist_data_ingestion_fact_tables.fact_orders  [[32mMERGE (97.1k rows, 39.3 MiB processed)[0m in 6.34s]
+[0m19:32:03.797625 [debug] [Thread-1 (]: Finished running node model.olist_dataset.fact_orders
+[0m19:32:03.802697 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:32:03.804674 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:32:03.806135 [debug] [MainThread]: Connection 'model.olist_dataset.fact_orders' was properly closed.
+[0m19:32:03.807607 [info ] [MainThread]: 
+[0m19:32:03.809177 [info ] [MainThread]: Finished running 3 incremental models, 3 table models in 0 hours 0 minutes and 31.41 seconds (31.41s).
+[0m19:32:03.813800 [debug] [MainThread]: Command end result
+[0m19:32:03.874146 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/manifest.json
+[0m19:32:03.877676 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/semantic_manifest.json
+[0m19:32:03.886118 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kangh/dsai-module-2-project/olist_dataset/target/run_results.json
+[0m19:32:03.886639 [info ] [MainThread]: 
+[0m19:32:03.887104 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:32:03.887665 [info ] [MainThread]: 
+[0m19:32:03.888117 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m19:32:03.889016 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 34.15808, "process_in_blocks": "0", "process_kernel_time": 1.18325, "process_mem_max_rss": "264004", "process_out_blocks": "2720", "process_user_time": 3.660102}
+[0m19:32:03.889539 [debug] [MainThread]: Command `dbt run` succeeded at 19:32:03.889411 after 34.16 seconds
+[0m19:32:03.889955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b7f460b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa889024820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888a038e0>]}
+[0m19:32:03.890566 [debug] [MainThread]: Flushing usage events
+[0m19:32:05.177588 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:32:13.251821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9586b9a080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9585b198d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9585b19870>]}
+
+
+============================== 19:32:13.254463 | f2b1350f-6792-41ba-81ad-0ca39403b8c0 ==============================
+[0m19:32:13.254463 [info ] [MainThread]: Running with dbt=1.9.2
+[0m19:32:13.255110 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kangh/dsai-module-2-project/olist_dataset', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/kangh/dsai-module-2-project/olist_dataset/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:32:14.232463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f2b1350f-6792-41ba-81ad-0ca39403b8c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9557bd2e60>]}
+[0m19:32:14.300029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f2b1350f-6792-41ba-81ad-0ca39403b8c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9557c2fd30>]}
+[0m19:32:14.300816 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:32:14.404924 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m19:32:14.613610 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:32:14.614086 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:32:14.669489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f2b1350f-6792-41ba-81ad-0ca39403b8c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9557604f10>]}
+[0m19:32:14.766461 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/manifest.json
+[0m19:32:14.768751 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/semantic_manifest.json
+[0m19:32:14.796194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f2b1350f-6792-41ba-81ad-0ca39403b8c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9557606290>]}
+[0m19:32:14.796831 [info ] [MainThread]: Found 3 snapshots, 6 models, 33 data tests, 9 sources, 491 macros
+[0m19:32:14.797245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2b1350f-6792-41ba-81ad-0ca39403b8c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f955c046fe0>]}
+[0m19:32:14.799968 [info ] [MainThread]: 
+[0m19:32:14.800376 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:32:14.800707 [info ] [MainThread]: 
+[0m19:32:14.801214 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:32:14.806005 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_olist-ecommerce-454812_olist_data_snapshots'
+[0m19:32:14.807056 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:32:15.768761 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_snapshots, now list_olist-ecommerce-454812_olist_data_ingestion_dim_tables)
+[0m19:32:15.771071 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:32:16.252832 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_ingestion_dim_tables, now list_olist-ecommerce-454812_olist_data_ingestion_fact_tables)
+[0m19:32:16.255401 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:32:16.615016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2b1350f-6792-41ba-81ad-0ca39403b8c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95878a81c0>]}
+[0m19:32:16.616419 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:32:16.623165 [debug] [Thread-1 (]: Began running node test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab
+[0m19:32:16.624554 [info ] [Thread-1 (]: 1 of 33 START test accepted_values_fact_orders_order_status__delivered__canceled  [RUN]
+[0m19:32:16.625740 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_olist-ecommerce-454812_olist_data_ingestion_fact_tables, now test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab)
+[0m19:32:16.626645 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab
+[0m19:32:16.650472 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab"
+[0m19:32:16.654194 [debug] [Thread-1 (]: Began executing node test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab
+[0m19:32:16.672353 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab"
+[0m19:32:16.673248 [debug] [Thread-1 (]: On test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        order_status as value_field,
+        count(*) as n_records
+
+    from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+    group by order_status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'delivered','canceled'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:16.673759 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:17.603497 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:d148b3d1-59d7-405d-a466-e5662a65a4eb&page=queryresults
+[0m19:32:18.665231 [info ] [Thread-1 (]: 1 of 33 PASS accepted_values_fact_orders_order_status__delivered__canceled ..... [[32mPASS[0m in 2.04s]
+[0m19:32:18.667007 [debug] [Thread-1 (]: Finished running node test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab
+[0m19:32:18.668697 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_customer_customer_city.98bef70201
+[0m19:32:18.670440 [info ] [Thread-1 (]: 2 of 33 START test not_null_dim_customer_customer_city ......................... [RUN]
+[0m19:32:18.671843 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.accepted_values_fact_orders_order_status__delivered__canceled.7315f000ab, now test.olist_dataset.not_null_dim_customer_customer_city.98bef70201)
+[0m19:32:18.673556 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_customer_customer_city.98bef70201
+[0m19:32:18.697805 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_customer_customer_city.98bef70201"
+[0m19:32:18.701514 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_customer_customer_city.98bef70201
+[0m19:32:18.713186 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_customer_customer_city.98bef70201"
+[0m19:32:18.717247 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_customer_customer_city.98bef70201: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_customer_customer_city.98bef70201"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_city
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+where customer_city is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:18.718211 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:19.396399 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:5fa80088-4a16-477a-bcbe-63091a3d4130&page=queryresults
+[0m19:32:20.409498 [info ] [Thread-1 (]: 2 of 33 PASS not_null_dim_customer_customer_city ............................... [[32mPASS[0m in 1.74s]
+[0m19:32:20.410572 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_customer_customer_city.98bef70201
+[0m19:32:20.410992 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc
+[0m19:32:20.411584 [info ] [Thread-1 (]: 3 of 33 START test not_null_dim_customer_customer_id ........................... [RUN]
+[0m19:32:20.412149 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_customer_customer_city.98bef70201, now test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc)
+[0m19:32:20.412518 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc
+[0m19:32:20.420721 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc"
+[0m19:32:20.422123 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc
+[0m19:32:20.427653 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc"
+[0m19:32:20.429116 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:20.429997 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:21.151980 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:23a51002-9867-4939-b2f4-9a95bb0ec467&page=queryresults
+[0m19:32:22.127571 [info ] [Thread-1 (]: 3 of 33 PASS not_null_dim_customer_customer_id ................................. [[32mPASS[0m in 1.72s]
+[0m19:32:22.129455 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc
+[0m19:32:22.131040 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82
+[0m19:32:22.132591 [info ] [Thread-1 (]: 4 of 33 START test not_null_dim_customer_customer_state ........................ [RUN]
+[0m19:32:22.133867 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_customer_customer_id.9775012dfc, now test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82)
+[0m19:32:22.134845 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82
+[0m19:32:22.143254 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82"
+[0m19:32:22.144272 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82
+[0m19:32:22.148029 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82"
+[0m19:32:22.148924 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_state
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+where customer_state is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:22.149442 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:22.745527 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:d66310b7-826b-4f81-8139-0ee5c05f7614&page=queryresults
+[0m19:32:23.731027 [info ] [Thread-1 (]: 4 of 33 PASS not_null_dim_customer_customer_state .............................. [[32mPASS[0m in 1.60s]
+[0m19:32:23.732574 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82
+[0m19:32:23.733458 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4
+[0m19:32:23.734301 [info ] [Thread-1 (]: 5 of 33 START test not_null_dim_customer_customer_unique_id .................... [RUN]
+[0m19:32:23.735365 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_customer_customer_state.4dc0500c82, now test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4)
+[0m19:32:23.736270 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4
+[0m19:32:23.744951 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4"
+[0m19:32:23.746320 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4
+[0m19:32:23.749796 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4"
+[0m19:32:23.750575 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_unique_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+where customer_unique_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:23.751342 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:24.368158 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:dbf5755e-8b99-496e-be85-a7d54c3da07a&page=queryresults
+[0m19:32:25.310866 [info ] [Thread-1 (]: 5 of 33 PASS not_null_dim_customer_customer_unique_id .......................... [[32mPASS[0m in 1.58s]
+[0m19:32:25.313032 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4
+[0m19:32:25.314383 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65
+[0m19:32:25.316401 [info ] [Thread-1 (]: 6 of 33 START test not_null_dim_customer_customer_zip_code_prefix .............. [RUN]
+[0m19:32:25.317959 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_customer_customer_unique_id.0020205ea4, now test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65)
+[0m19:32:25.318948 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65
+[0m19:32:25.333871 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65"
+[0m19:32:25.335936 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65
+[0m19:32:25.344155 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65"
+[0m19:32:25.347947 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_zip_code_prefix
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+where customer_zip_code_prefix is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:25.350578 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:25.961726 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:f437a182-a2a6-4a98-9f34-bedd4b79d9f2&page=queryresults
+[0m19:32:26.893513 [info ] [Thread-1 (]: 6 of 33 PASS not_null_dim_customer_customer_zip_code_prefix .................... [[32mPASS[0m in 1.58s]
+[0m19:32:26.895072 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65
+[0m19:32:26.896021 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207
+[0m19:32:26.896883 [info ] [Thread-1 (]: 7 of 33 START test not_null_dim_geolocation_geolocation_city ................... [RUN]
+[0m19:32:26.898559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_customer_customer_zip_code_prefix.09a71b4a65, now test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207)
+[0m19:32:26.899490 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207
+[0m19:32:26.911000 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207"
+[0m19:32:26.914007 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207
+[0m19:32:26.917212 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207"
+[0m19:32:26.918138 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select geolocation_city
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation`
+where geolocation_city is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:26.918707 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:27.619710 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:6bea6b86-d757-45cf-9b84-77b0abb1cce1&page=queryresults
+[0m19:32:28.584212 [info ] [Thread-1 (]: 7 of 33 PASS not_null_dim_geolocation_geolocation_city ......................... [[32mPASS[0m in 1.69s]
+[0m19:32:28.586251 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207
+[0m19:32:28.587512 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954
+[0m19:32:28.588987 [info ] [Thread-1 (]: 8 of 33 START test not_null_dim_geolocation_geolocation_state .................. [RUN]
+[0m19:32:28.590410 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_geolocation_geolocation_city.4aa1093207, now test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954)
+[0m19:32:28.591359 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954
+[0m19:32:28.605503 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954"
+[0m19:32:28.607511 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954
+[0m19:32:28.621244 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954"
+[0m19:32:28.625351 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select geolocation_state
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation`
+where geolocation_state is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:28.627103 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:29.242571 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:61380539-8685-4e7f-aad7-6d6e0606759c&page=queryresults
+[0m19:32:30.189275 [info ] [Thread-1 (]: 8 of 33 PASS not_null_dim_geolocation_geolocation_state ........................ [[32mPASS[0m in 1.60s]
+[0m19:32:30.191310 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954
+[0m19:32:30.192397 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c
+[0m19:32:30.193192 [info ] [Thread-1 (]: 9 of 33 START test not_null_dim_geolocation_geolocation_zip_code_prefix ........ [RUN]
+[0m19:32:30.194311 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_geolocation_geolocation_state.0eca699954, now test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c)
+[0m19:32:30.195069 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c
+[0m19:32:30.205255 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c"
+[0m19:32:30.206904 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c
+[0m19:32:30.212515 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c"
+[0m19:32:30.214946 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select geolocation_zip_code_prefix
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation`
+where geolocation_zip_code_prefix is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:30.216205 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:30.845643 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:85d5b057-c6a3-4c35-8814-b9423d3832f9&page=queryresults
+[0m19:32:31.760980 [info ] [Thread-1 (]: 9 of 33 PASS not_null_dim_geolocation_geolocation_zip_code_prefix .............. [[32mPASS[0m in 1.57s]
+[0m19:32:31.762561 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c
+[0m19:32:31.763447 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492
+[0m19:32:31.764233 [info ] [Thread-1 (]: 10 of 33 START test not_null_dim_product_product_category_name ................. [RUN]
+[0m19:32:31.765216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_geolocation_geolocation_zip_code_prefix.df598c671c, now test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492)
+[0m19:32:31.766108 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492
+[0m19:32:31.779902 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492"
+[0m19:32:31.781949 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492
+[0m19:32:31.790360 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492"
+[0m19:32:31.792728 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_category_name
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_product`
+where product_category_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:31.793998 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:32.426381 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:6622835d-0a4e-494e-bca3-a0fd8070971e&page=queryresults
+[0m19:32:33.470235 [info ] [Thread-1 (]: 10 of 33 PASS not_null_dim_product_product_category_name ....................... [[32mPASS[0m in 1.70s]
+[0m19:32:33.471905 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492
+[0m19:32:33.472857 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_product_product_id.02b1f06816
+[0m19:32:33.474284 [info ] [Thread-1 (]: 11 of 33 START test not_null_dim_product_product_id ............................ [RUN]
+[0m19:32:33.475555 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_product_product_category_name.e964a6b492, now test.olist_dataset.not_null_dim_product_product_id.02b1f06816)
+[0m19:32:33.476554 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_product_product_id.02b1f06816
+[0m19:32:33.493129 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_product_product_id.02b1f06816"
+[0m19:32:33.495654 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_product_product_id.02b1f06816
+[0m19:32:33.504163 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_product_product_id.02b1f06816"
+[0m19:32:33.507621 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_product_product_id.02b1f06816: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_product_product_id.02b1f06816"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_product`
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:33.509278 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:34.142588 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:b1bf7aa3-d0b7-4ddb-9699-81c5c2e64065&page=queryresults
+[0m19:32:35.148881 [info ] [Thread-1 (]: 11 of 33 PASS not_null_dim_product_product_id .................................. [[32mPASS[0m in 1.67s]
+[0m19:32:35.150569 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_product_product_id.02b1f06816
+[0m19:32:35.151661 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d
+[0m19:32:35.152840 [info ] [Thread-1 (]: 12 of 33 START test not_null_dim_seller_seller_city ............................ [RUN]
+[0m19:32:35.154043 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_product_product_id.02b1f06816, now test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d)
+[0m19:32:35.155012 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d
+[0m19:32:35.170819 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d"
+[0m19:32:35.173296 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d
+[0m19:32:35.182538 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d"
+[0m19:32:35.184679 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select seller_city
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+where seller_city is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:35.186075 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:35.797401 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:14463e87-da69-4c2e-b2be-46ca84fa5534&page=queryresults
+[0m19:32:36.736772 [info ] [Thread-1 (]: 12 of 33 PASS not_null_dim_seller_seller_city .................................. [[32mPASS[0m in 1.58s]
+[0m19:32:36.738216 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d
+[0m19:32:36.739061 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2
+[0m19:32:36.739928 [info ] [Thread-1 (]: 13 of 33 START test not_null_dim_seller_seller_id .............................. [RUN]
+[0m19:32:36.741246 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_seller_seller_city.9affaaf52d, now test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2)
+[0m19:32:36.742120 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2
+[0m19:32:36.757318 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2"
+[0m19:32:36.758839 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2
+[0m19:32:36.765302 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2"
+[0m19:32:36.768712 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select seller_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+where seller_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:36.770947 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:37.411748 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:df64d8ba-54c3-4da8-bd92-1b7a3b1dfb31&page=queryresults
+[0m19:32:38.489363 [info ] [Thread-1 (]: 13 of 33 PASS not_null_dim_seller_seller_id .................................... [[32mPASS[0m in 1.75s]
+[0m19:32:38.491174 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2
+[0m19:32:38.492462 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb
+[0m19:32:38.494754 [info ] [Thread-1 (]: 14 of 33 START test not_null_dim_seller_seller_state ........................... [RUN]
+[0m19:32:38.496261 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_seller_seller_id.3da5c751a2, now test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb)
+[0m19:32:38.497353 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb
+[0m19:32:38.518893 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb"
+[0m19:32:38.521069 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb
+[0m19:32:38.525930 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb"
+[0m19:32:38.528659 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select seller_state
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+where seller_state is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:38.531632 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:39.334650 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:8af6f1ff-fa0b-4722-8c96-31c12d5020d4&page=queryresults
+[0m19:32:39.358046 [info ] [Thread-1 (]: 14 of 33 PASS not_null_dim_seller_seller_state ................................. [[32mPASS[0m in 0.86s]
+[0m19:32:39.359352 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb
+[0m19:32:39.360120 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472
+[0m19:32:39.360801 [info ] [Thread-1 (]: 15 of 33 START test not_null_dim_seller_seller_zip_code_prefix ................. [RUN]
+[0m19:32:39.362137 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_seller_seller_state.6a5663c3bb, now test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472)
+[0m19:32:39.363005 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472
+[0m19:32:39.373102 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472"
+[0m19:32:39.374704 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472
+[0m19:32:39.380578 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472"
+[0m19:32:39.382651 [debug] [Thread-1 (]: On test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select seller_zip_code_prefix
+from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+where seller_zip_code_prefix is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:39.383949 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:39.925199 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:cf28266e-b8e5-4eff-84de-724045554402&page=queryresults
+[0m19:32:40.932880 [info ] [Thread-1 (]: 15 of 33 PASS not_null_dim_seller_seller_zip_code_prefix ....................... [[32mPASS[0m in 1.57s]
+[0m19:32:40.935062 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472
+[0m19:32:40.936513 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e
+[0m19:32:40.937710 [info ] [Thread-1 (]: 16 of 33 START test not_null_fact_order_items_order_id ......................... [RUN]
+[0m19:32:40.939780 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_dim_seller_seller_zip_code_prefix.78e26fc472, now test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e)
+[0m19:32:40.941219 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e
+[0m19:32:40.974177 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e"
+[0m19:32:40.979118 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e
+[0m19:32:40.987754 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e"
+[0m19:32:40.993149 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:40.994694 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:41.619416 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:d92b7a6e-d536-49c5-a9d4-a6c5c7d3f437&page=queryresults
+[0m19:32:42.616325 [info ] [Thread-1 (]: 16 of 33 PASS not_null_fact_order_items_order_id ............................... [[32mPASS[0m in 1.68s]
+[0m19:32:42.617547 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e
+[0m19:32:42.618272 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8
+[0m19:32:42.618880 [info ] [Thread-1 (]: 17 of 33 START test not_null_fact_order_items_order_id_item .................... [RUN]
+[0m19:32:42.619694 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_order_items_order_id.ce02dc1e7e, now test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8)
+[0m19:32:42.620888 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8
+[0m19:32:42.631476 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8"
+[0m19:32:42.632911 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8
+[0m19:32:42.638269 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8"
+[0m19:32:42.639715 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id_item
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+where order_id_item is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:42.640687 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:43.320616 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:d121140b-d169-405b-bd5b-60132cedfa76&page=queryresults
+[0m19:32:44.300814 [info ] [Thread-1 (]: 17 of 33 PASS not_null_fact_order_items_order_id_item .......................... [[32mPASS[0m in 1.68s]
+[0m19:32:44.302907 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8
+[0m19:32:44.304094 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9
+[0m19:32:44.305736 [info ] [Thread-1 (]: 18 of 33 START test not_null_fact_order_items_product_id ....................... [RUN]
+[0m19:32:44.307190 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_order_items_order_id_item.c18503c6c8, now test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9)
+[0m19:32:44.308790 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9
+[0m19:32:44.324322 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9"
+[0m19:32:44.326459 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9
+[0m19:32:44.333734 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9"
+[0m19:32:44.335666 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:44.336925 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:44.892628 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:d084822d-c520-41e1-b96c-780c1fe4965f&page=queryresults
+[0m19:32:45.854340 [info ] [Thread-1 (]: 18 of 33 PASS not_null_fact_order_items_product_id ............................. [[32mPASS[0m in 1.55s]
+[0m19:32:45.855927 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9
+[0m19:32:45.856817 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883
+[0m19:32:45.858097 [info ] [Thread-1 (]: 19 of 33 START test not_null_fact_order_items_seller_id ........................ [RUN]
+[0m19:32:45.859247 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_order_items_product_id.54f1977fe9, now test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883)
+[0m19:32:45.860213 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883
+[0m19:32:45.868718 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883"
+[0m19:32:45.870332 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883
+[0m19:32:45.878382 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883"
+[0m19:32:45.880130 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select seller_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+where seller_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:45.881204 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:46.507125 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:52ab8db7-e031-4e87-b46d-67f69a93331b&page=queryresults
+[0m19:32:47.465106 [info ] [Thread-1 (]: 19 of 33 PASS not_null_fact_order_items_seller_id .............................. [[32mPASS[0m in 1.61s]
+[0m19:32:47.466676 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883
+[0m19:32:47.467550 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc
+[0m19:32:47.468424 [info ] [Thread-1 (]: 20 of 33 START test not_null_fact_orders_customer_id ........................... [RUN]
+[0m19:32:47.469521 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_order_items_seller_id.5febc4b883, now test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc)
+[0m19:32:47.470348 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc
+[0m19:32:47.481740 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc"
+[0m19:32:47.483942 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc
+[0m19:32:47.488031 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc"
+[0m19:32:47.490187 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:47.491011 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:48.396628 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:b7f20b52-fcd4-4aeb-b5d1-bff720f35fed&page=queryresults
+[0m19:32:49.327812 [info ] [Thread-1 (]: 20 of 33 PASS not_null_fact_orders_customer_id ................................. [[32mPASS[0m in 1.86s]
+[0m19:32:49.329070 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc
+[0m19:32:49.329847 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m19:32:49.330532 [info ] [Thread-1 (]: 21 of 33 START test not_null_fact_orders_order_id .............................. [RUN]
+[0m19:32:49.331807 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_orders_customer_id.9c2270d0dc, now test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0)
+[0m19:32:49.332594 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m19:32:49.341794 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0"
+[0m19:32:49.342916 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m19:32:49.345842 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0"
+[0m19:32:49.346738 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:49.347418 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:49.883166 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:f4e3e7c6-1b86-438d-b25f-303bae580587&page=queryresults
+[0m19:32:50.888182 [info ] [Thread-1 (]: 21 of 33 PASS not_null_fact_orders_order_id .................................... [[32mPASS[0m in 1.56s]
+[0m19:32:50.889060 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m19:32:50.889513 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434
+[0m19:32:50.889934 [info ] [Thread-1 (]: 22 of 33 START test not_null_fact_orders_order_purchase_timestamp .............. [RUN]
+[0m19:32:50.890644 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_orders_order_id.6ba6d3f0a0, now test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434)
+[0m19:32:50.891130 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434
+[0m19:32:50.900781 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434"
+[0m19:32:50.903454 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434
+[0m19:32:50.913607 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434"
+[0m19:32:50.915853 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_purchase_timestamp
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+where order_purchase_timestamp is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:50.917281 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:51.520034 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:d47ccf21-ef40-4459-beb3-a067f2772562&page=queryresults
+[0m19:32:52.427242 [info ] [Thread-1 (]: 22 of 33 PASS not_null_fact_orders_order_purchase_timestamp .................... [[32mPASS[0m in 1.54s]
+[0m19:32:52.428547 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434
+[0m19:32:52.429279 [debug] [Thread-1 (]: Began running node test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1
+[0m19:32:52.429980 [info ] [Thread-1 (]: 23 of 33 START test not_null_fact_orders_order_status .......................... [RUN]
+[0m19:32:52.430861 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_orders_order_purchase_timestamp.a8f5dc0434, now test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1)
+[0m19:32:52.431654 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1
+[0m19:32:52.440041 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1"
+[0m19:32:52.441612 [debug] [Thread-1 (]: Began executing node test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1
+[0m19:32:52.446803 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1"
+[0m19:32:52.448013 [debug] [Thread-1 (]: On test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_status
+from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+where order_status is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:52.448758 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:53.012127 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:ebbfd6c6-6676-43fc-9576-a8ea73383302&page=queryresults
+[0m19:32:53.995307 [info ] [Thread-1 (]: 23 of 33 PASS not_null_fact_orders_order_status ................................ [[32mPASS[0m in 1.56s]
+[0m19:32:53.996533 [debug] [Thread-1 (]: Finished running node test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1
+[0m19:32:53.997246 [debug] [Thread-1 (]: Began running node test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74
+[0m19:32:53.997666 [info ] [Thread-1 (]: 24 of 33 START test relationships_fact_order_items_order_id__order_id__ref_fact_orders_  [RUN]
+[0m19:32:53.998272 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.not_null_fact_orders_order_status.6a291ae0c1, now test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74)
+[0m19:32:53.998684 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74
+[0m19:32:54.008852 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74"
+[0m19:32:54.010298 [debug] [Thread-1 (]: Began executing node test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74
+[0m19:32:54.015074 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74"
+[0m19:32:54.016685 [debug] [Thread-1 (]: On test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select order_id as from_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+    where order_id is not null
+),
+
+parent as (
+    select order_id as to_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:54.017663 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:54.954538 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:b7ca4053-c403-4d05-b101-1b8e881054e9&page=queryresults
+[0m19:32:55.917723 [info ] [Thread-1 (]: 24 of 33 PASS relationships_fact_order_items_order_id__order_id__ref_fact_orders_  [[32mPASS[0m in 1.92s]
+[0m19:32:55.918993 [debug] [Thread-1 (]: Finished running node test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74
+[0m19:32:55.919727 [debug] [Thread-1 (]: Began running node test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428
+[0m19:32:55.920419 [info ] [Thread-1 (]: 25 of 33 START test relationships_fact_order_items_product_id__product_id__ref_dim_product_  [RUN]
+[0m19:32:55.921401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.relationships_fact_order_items_order_id__order_id__ref_fact_orders_.499cb32e74, now test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428)
+[0m19:32:55.921859 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428
+[0m19:32:55.935311 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428"
+[0m19:32:55.936815 [debug] [Thread-1 (]: Began executing node test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428
+[0m19:32:55.941639 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428"
+[0m19:32:55.942821 [debug] [Thread-1 (]: On test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select product_id as from_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_product`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:55.943480 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:56.814093 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:47ed05d3-8e02-4ab4-9b99-42e3a703fded&page=queryresults
+[0m19:32:57.802764 [info ] [Thread-1 (]: 25 of 33 PASS relationships_fact_order_items_product_id__product_id__ref_dim_product_  [[32mPASS[0m in 1.88s]
+[0m19:32:57.804659 [debug] [Thread-1 (]: Finished running node test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428
+[0m19:32:57.805884 [debug] [Thread-1 (]: Began running node test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1
+[0m19:32:57.807082 [info ] [Thread-1 (]: 26 of 33 START test relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_  [RUN]
+[0m19:32:57.808943 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.relationships_fact_order_items_product_id__product_id__ref_dim_product_.90d3f8c428, now test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1)
+[0m19:32:57.810135 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1
+[0m19:32:57.824214 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1"
+[0m19:32:57.825689 [debug] [Thread-1 (]: Began executing node test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1
+[0m19:32:57.829087 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1"
+[0m19:32:57.830461 [debug] [Thread-1 (]: On test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select seller_id as from_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+    where seller_id is not null
+),
+
+parent as (
+    select seller_id as to_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:57.831249 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:58.543368 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:912756dc-a601-459b-be84-c4080d25c947&page=queryresults
+[0m19:32:59.510703 [info ] [Thread-1 (]: 26 of 33 PASS relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_  [[32mPASS[0m in 1.70s]
+[0m19:32:59.511685 [debug] [Thread-1 (]: Finished running node test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1
+[0m19:32:59.512188 [debug] [Thread-1 (]: Began running node test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba
+[0m19:32:59.512637 [info ] [Thread-1 (]: 27 of 33 START test relationships_fact_orders_customer_id__customer_id__ref_dim_customer_  [RUN]
+[0m19:32:59.513216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.relationships_fact_order_items_seller_id__seller_id__ref_dim_seller_.47fac820e1, now test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba)
+[0m19:32:59.513622 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba
+[0m19:32:59.520113 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba"
+[0m19:32:59.521003 [debug] [Thread-1 (]: Began executing node test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba
+[0m19:32:59.524945 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba"
+[0m19:32:59.525993 [debug] [Thread-1 (]: On test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:32:59.526615 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:33:00.622106 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:ab20d976-85ff-4848-ab8a-35d30b3758c0&page=queryresults
+[0m19:33:01.528012 [info ] [Thread-1 (]: 27 of 33 PASS relationships_fact_orders_customer_id__customer_id__ref_dim_customer_  [[32mPASS[0m in 2.01s]
+[0m19:33:01.529627 [debug] [Thread-1 (]: Finished running node test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba
+[0m19:33:01.530679 [debug] [Thread-1 (]: Began running node test.olist_dataset.unique_dim_customer_customer_id.b42affccd1
+[0m19:33:01.531780 [info ] [Thread-1 (]: 28 of 33 START test unique_dim_customer_customer_id ............................ [RUN]
+[0m19:33:01.533098 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.relationships_fact_orders_customer_id__customer_id__ref_dim_customer_.d14414efba, now test.olist_dataset.unique_dim_customer_customer_id.b42affccd1)
+[0m19:33:01.534066 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.unique_dim_customer_customer_id.b42affccd1
+[0m19:33:01.554631 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.unique_dim_customer_customer_id.b42affccd1"
+[0m19:33:01.555771 [debug] [Thread-1 (]: Began executing node test.olist_dataset.unique_dim_customer_customer_id.b42affccd1
+[0m19:33:01.561006 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.unique_dim_customer_customer_id.b42affccd1"
+[0m19:33:01.561848 [debug] [Thread-1 (]: On test.olist_dataset.unique_dim_customer_customer_id.b42affccd1: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.unique_dim_customer_customer_id.b42affccd1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_customer`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:33:01.562354 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:33:02.341927 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:9187cbec-aaeb-4620-ad96-6403ab89349f&page=queryresults
+[0m19:33:03.359869 [info ] [Thread-1 (]: 28 of 33 PASS unique_dim_customer_customer_id .................................. [[32mPASS[0m in 1.83s]
+[0m19:33:03.361192 [debug] [Thread-1 (]: Finished running node test.olist_dataset.unique_dim_customer_customer_id.b42affccd1
+[0m19:33:03.361903 [debug] [Thread-1 (]: Began running node test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0
+[0m19:33:03.362523 [info ] [Thread-1 (]: 29 of 33 START test unique_dim_geolocation_geolocation_zip_code_prefix ......... [RUN]
+[0m19:33:03.363343 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.unique_dim_customer_customer_id.b42affccd1, now test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0)
+[0m19:33:03.364046 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0
+[0m19:33:03.368980 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0"
+[0m19:33:03.369875 [debug] [Thread-1 (]: Began executing node test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0
+[0m19:33:03.372375 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0"
+[0m19:33:03.373103 [debug] [Thread-1 (]: On test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select geolocation_zip_code_prefix as unique_field
+  from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation`
+  where geolocation_zip_code_prefix is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:33:03.373601 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:33:04.335789 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:8676fc92-2753-48a2-9da6-2d473869de4d&page=queryresults
+[0m19:33:05.290710 [info ] [Thread-1 (]: 29 of 33 PASS unique_dim_geolocation_geolocation_zip_code_prefix ............... [[32mPASS[0m in 1.93s]
+[0m19:33:05.292009 [debug] [Thread-1 (]: Finished running node test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0
+[0m19:33:05.292708 [debug] [Thread-1 (]: Began running node test.olist_dataset.unique_dim_product_product_id.46495bf7fe
+[0m19:33:05.293433 [info ] [Thread-1 (]: 30 of 33 START test unique_dim_product_product_id .............................. [RUN]
+[0m19:33:05.294313 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.unique_dim_geolocation_geolocation_zip_code_prefix.d54b798bd0, now test.olist_dataset.unique_dim_product_product_id.46495bf7fe)
+[0m19:33:05.295470 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.unique_dim_product_product_id.46495bf7fe
+[0m19:33:05.303669 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.unique_dim_product_product_id.46495bf7fe"
+[0m19:33:05.305599 [debug] [Thread-1 (]: Began executing node test.olist_dataset.unique_dim_product_product_id.46495bf7fe
+[0m19:33:05.312071 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.unique_dim_product_product_id.46495bf7fe"
+[0m19:33:05.312958 [debug] [Thread-1 (]: On test.olist_dataset.unique_dim_product_product_id.46495bf7fe: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.unique_dim_product_product_id.46495bf7fe"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select product_id as unique_field
+  from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_product`
+  where product_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:33:05.313559 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:33:06.179678 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:4942543a-9055-4ff6-8fc4-96832cdc21e3&page=queryresults
+[0m19:33:07.200504 [info ] [Thread-1 (]: 30 of 33 PASS unique_dim_product_product_id .................................... [[32mPASS[0m in 1.91s]
+[0m19:33:07.201758 [debug] [Thread-1 (]: Finished running node test.olist_dataset.unique_dim_product_product_id.46495bf7fe
+[0m19:33:07.202448 [debug] [Thread-1 (]: Began running node test.olist_dataset.unique_dim_seller_seller_id.a1add5f830
+[0m19:33:07.203136 [info ] [Thread-1 (]: 31 of 33 START test unique_dim_seller_seller_id ................................ [RUN]
+[0m19:33:07.204016 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.unique_dim_product_product_id.46495bf7fe, now test.olist_dataset.unique_dim_seller_seller_id.a1add5f830)
+[0m19:33:07.204925 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.unique_dim_seller_seller_id.a1add5f830
+[0m19:33:07.212811 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.unique_dim_seller_seller_id.a1add5f830"
+[0m19:33:07.214199 [debug] [Thread-1 (]: Began executing node test.olist_dataset.unique_dim_seller_seller_id.a1add5f830
+[0m19:33:07.221335 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.unique_dim_seller_seller_id.a1add5f830"
+[0m19:33:07.222286 [debug] [Thread-1 (]: On test.olist_dataset.unique_dim_seller_seller_id.a1add5f830: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.unique_dim_seller_seller_id.a1add5f830"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select seller_id as unique_field
+  from `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_seller`
+  where seller_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:33:07.222800 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:33:07.944082 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:902aa3a1-db8a-4135-bc45-778763f5359a&page=queryresults
+[0m19:33:08.897671 [info ] [Thread-1 (]: 31 of 33 PASS unique_dim_seller_seller_id ...................................... [[32mPASS[0m in 1.69s]
+[0m19:33:08.898866 [debug] [Thread-1 (]: Finished running node test.olist_dataset.unique_dim_seller_seller_id.a1add5f830
+[0m19:33:08.899567 [debug] [Thread-1 (]: Began running node test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c
+[0m19:33:08.900226 [info ] [Thread-1 (]: 32 of 33 START test unique_fact_order_items_order_id_item ...................... [RUN]
+[0m19:33:08.901549 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.unique_dim_seller_seller_id.a1add5f830, now test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c)
+[0m19:33:08.902384 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c
+[0m19:33:08.909850 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c"
+[0m19:33:08.911361 [debug] [Thread-1 (]: Began executing node test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c
+[0m19:33:08.916505 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c"
+[0m19:33:08.917894 [debug] [Thread-1 (]: On test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select order_id_item as unique_field
+  from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_order_items`
+  where order_id_item is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:33:08.918972 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:33:09.703795 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:36a43ca8-f3f2-4a25-88a2-8db5e902f91a&page=queryresults
+[0m19:33:10.639116 [info ] [Thread-1 (]: 32 of 33 PASS unique_fact_order_items_order_id_item ............................ [[32mPASS[0m in 1.74s]
+[0m19:33:10.641242 [debug] [Thread-1 (]: Finished running node test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c
+[0m19:33:10.643107 [debug] [Thread-1 (]: Began running node test.olist_dataset.unique_fact_orders_order_id.93a68b4064
+[0m19:33:10.644992 [info ] [Thread-1 (]: 33 of 33 START test unique_fact_orders_order_id ................................ [RUN]
+[0m19:33:10.646970 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_dataset.unique_fact_order_items_order_id_item.74b0d4528c, now test.olist_dataset.unique_fact_orders_order_id.93a68b4064)
+[0m19:33:10.648227 [debug] [Thread-1 (]: Began compiling node test.olist_dataset.unique_fact_orders_order_id.93a68b4064
+[0m19:33:10.660580 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_dataset.unique_fact_orders_order_id.93a68b4064"
+[0m19:33:10.662272 [debug] [Thread-1 (]: Began executing node test.olist_dataset.unique_fact_orders_order_id.93a68b4064
+[0m19:33:10.667330 [debug] [Thread-1 (]: Writing runtime sql for node "test.olist_dataset.unique_fact_orders_order_id.93a68b4064"
+[0m19:33:10.668282 [debug] [Thread-1 (]: On test.olist_dataset.unique_fact_orders_order_id.93a68b4064: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "olist_dataset", "target_name": "dev", "node_id": "test.olist_dataset.unique_fact_orders_order_id.93a68b4064"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `olist-ecommerce-454812`.`olist_data_ingestion_fact_tables`.`fact_orders`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:33:10.668993 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:33:10.549531 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=olist-ecommerce-454812&j=bq:US:b900fea8-8aa0-4e59-a725-c34a5782ef42&page=queryresults
+[0m19:33:11.558612 [info ] [Thread-1 (]: 33 of 33 PASS unique_fact_orders_order_id ...................................... [[32mPASS[0m in 0.91s]
+[0m19:33:11.559513 [debug] [Thread-1 (]: Finished running node test.olist_dataset.unique_fact_orders_order_id.93a68b4064
+[0m19:33:11.563855 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:33:11.565316 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:33:11.565794 [debug] [MainThread]: Connection 'test.olist_dataset.unique_fact_orders_order_id.93a68b4064' was properly closed.
+[0m19:33:11.566204 [info ] [MainThread]: 
+[0m19:33:11.566629 [info ] [MainThread]: Finished running 33 data tests in 0 hours 0 minutes and 56.77 seconds (56.77s).
+[0m19:33:11.572704 [debug] [MainThread]: Command end result
+[0m19:33:11.601462 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/manifest.json
+[0m19:33:11.603849 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kangh/dsai-module-2-project/olist_dataset/target/semantic_manifest.json
+[0m19:33:11.612461 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kangh/dsai-module-2-project/olist_dataset/target/run_results.json
+[0m19:33:11.613024 [info ] [MainThread]: 
+[0m19:33:11.613478 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:33:11.613853 [info ] [MainThread]: 
+[0m19:33:11.614214 [info ] [MainThread]: Done. PASS=33 WARN=0 ERROR=0 SKIP=0 TOTAL=33
+[0m19:33:11.614895 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 60.295418, "process_in_blocks": "1720", "process_kernel_time": 1.306163, "process_mem_max_rss": "257960", "process_out_blocks": "3336", "process_user_time": 4.634461}
+[0m19:33:11.615373 [debug] [MainThread]: Command `dbt test` succeeded at 19:33:11.615264 after 60.30 seconds
+[0m19:33:11.615853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9586b9a080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9554b4b790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f958604c790>]}
+[0m19:33:11.616304 [debug] [MainThread]: Flushing usage events
+[0m19:33:12.608418 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -24,3 +24,7 @@ WHERE rn = 1
 -- which assume data already in table never change
 
 -- 
+--   WHERE geolocation_zip_code_prefix NOT IN (
+--       SELECT geolocation_zip_code_prefix FROM `olist-ecommerce-454812`.`olist_data_ingestion_dim_tables`.`dim_geolocation`
+--   )
+-- 
